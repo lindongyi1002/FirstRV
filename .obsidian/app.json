@@ -1,0 +1,12 @@
+{
+  "readableLineLength": false,
+  "showLineNumber": true,
+  "showIndentGuide": true,
+  "vimMode": false,
+  "newLinkFormat": "shortest",
+  "attachmentFolderPath": "Fig_Bed",
+  "useTab": false,
+  "autoPairMarkdown": false,
+  "showFrontmatter": false,
+  "alwaysUpdateLinks": true
+}

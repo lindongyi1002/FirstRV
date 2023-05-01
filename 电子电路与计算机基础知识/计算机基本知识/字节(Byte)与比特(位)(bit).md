@@ -1,0 +1,5 @@
+- **1字节(Byte) = 8比特(bit) = 8位**
+- 1000字节(1000Byte) = 8000比特(8000bit)
+- 一般按照WIndows系统对KB的规定: 1KB(Kilobyte) = 1024Byte
+- 因此1KB = 1024Byte = 8192bit = 8Kb
+- 注意却分大小写

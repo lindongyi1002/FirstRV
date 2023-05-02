@@ -60,8 +60,8 @@
 |R-type|I-type|S-type|B-type|U-type|J-type|
 |---|---|---|---|---|---|
 |寄存器到寄存器|用于短immediate和访存load|Store|条件跳转Branch|长immediate|非条件跳转Jump|
-    - 其中rs2和rs1(source register)是源操作数寄存器, rd(destination register)是目标寄存器
-    ![800](https://cdn.jsdelivr.net/gh/lindongyi1002/FigBed/ObFigBed/Pasted%20image%2020230417111057.png)]]
+- 其中rs2和rs1(source register)是源操作数寄存器, rd(destination register)是目标寄存器
+![800](https://cdn.jsdelivr.net/gh/lindongyi1002/FigBed/ObFigBed/Pasted%20image%2020230417111057.png)
     - shamt字段(shift amount)用于指定位移指令(如slli, srli和srai)的位移量;
     - pred
     - succ

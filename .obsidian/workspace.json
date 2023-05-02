@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Verilog/Verilog打拍后仿真结果并没有打拍.md",
+                "file": "RISC-V/RISC-V基础知识.md",
                 "mode": "source",
                 "source": false
               }
@@ -33,7 +33,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Verilog/Verilog打拍后仿真结果并没有打拍.md"
+                "file": "RISC-V/RISC-V基础知识.md"
               }
             }
           }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Verilog/Verilog打拍后仿真结果并没有打拍.md",
+                "file": "RISC-V/RISC-V基础知识.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Verilog/Verilog打拍后仿真结果并没有打拍.md",
+                "file": "RISC-V/RISC-V基础知识.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Verilog/Verilog打拍后仿真结果并没有打拍.md"
+                "file": "RISC-V/RISC-V基础知识.md"
               }
             }
           }
@@ -166,8 +166,8 @@
   },
   "active": "61359b0f67313b69",
   "lastOpenFiles": [
-    "Verilog/Verilog基础知识.md",
     "Verilog/Verilog打拍后仿真结果并没有打拍.md",
+    "Verilog/Verilog基础知识.md",
     "Verilog/同步复位异步复位.pdf",
     "Verilog/关于使用结构化描述方式编写RTL代码时逻辑门的延时语法的功能解释.md",
     "RISC-V/RISC-V基础知识.md",

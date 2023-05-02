@@ -32,7 +32,7 @@ always@(in0 or in1 or ALUCtrl)begin
         4'b0010:    ALUOut <= in0 + in1;                //add
         4'b0110:    ALUOut <= in0 - in1;                //sub
         4'b0111:    ALUOut <= (in0 < in1)? 1'b1 : 0;    //slt
-        4'b1100:    ALUOut <= ~(in0 | in1);                 //nor
+        4'b1100:    ALUOut <= ~(in0 | in1);             //nor
         default:    ALUOut <= 0;
     endcase
 end

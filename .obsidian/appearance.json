@@ -2,5 +2,7 @@
   "accentColor": "",
   "baseFontSize": 21,
   "translucency": false,
-  "monospaceFontFamily": "Courier New"
+  "monospaceFontFamily": "Courier New",
+  "textFontFamily": "微软雅黑",
+  "theme": "obsidian"
 }

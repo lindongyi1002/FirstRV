@@ -11,7 +11,14 @@
     Copyright           :   2023, Lindongyi, All right reserved
 ==============================================================================================*/
 
-module ALU(
+module ALU(a, b, Cin, Less, AluCtrl, Cout, Result);
 
-);
+input               a;
+input               b;
+input               Cin;
+input               Less;
+input       [3:0]   AluCtrl;
+output              Cout;
+output              Result;
+
 endmodule

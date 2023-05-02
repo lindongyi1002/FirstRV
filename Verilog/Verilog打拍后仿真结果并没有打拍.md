@@ -42,7 +42,7 @@ initial begin
 end
 ```
 对于第一种tb代码, 时钟和复位用的时阻塞赋值(=), Tx_data_ready用的也是阻塞赋值, 其仿真波形如下:
-![[Fig_Bed/modelsim_Tx_data_ready.png| 1200]]
+![1200](https://cdn.jsdelivr.net/gh/lindongyi1002/FigBed/ObFigBed/modelsim_Tx_data_ready.png)
 从仿真图中可以看到Tx_data_ready和Tx_data_ready_reg0并没有打拍, 而且posedge和negedge都没有保持一个周期.
 
 ---
@@ -77,4 +77,4 @@ initial begin
 end
 ```
 把initial中的(=)改成(<=)仿真结果就正确了,打拍和上下边沿都有了, 究其原因还是阻塞赋值和非阻塞赋值的区别, 仿真结果图如下:
-![[Fig_Bed/modelsim_Tx_data_ready2.png|1200]]
+![1200](https://cdn.jsdelivr.net/gh/lindongyi1002/FigBed/ObFigBed/modelsim_Tx_data_ready2.png)

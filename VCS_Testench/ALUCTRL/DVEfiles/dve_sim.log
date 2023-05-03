@@ -1,0 +1,34 @@
+17:39:18    16 -->                                                             [tcl] ucliGUI::connect -toolargs -ucligui -toolexe ./simv -a run.log -pid 10265 -toolin /tmp/vcs_20230503093917_10264_lindongyi..stdin -toolout /tmp/vcs_20230503093917_10264_lindongyi..stdout  
+17:39:18    17 -->                                                                 [tcl] set ucliGUI::state
+17:39:18    18 -->                                                                     [tcl] set dveMisc::dve_log_file 1
+17:39:18    19 -->                                                                         [tcl] gui_update_simulator_buttons
+17:39:20    20 -->                                                                             [tcl] set ucliGUI::state
+17:39:20    21 -->                                                                                 [tcl] ucliCore::getToolPID
+17:39:20    22 -->                                                                                     [tcl] synopsys::env hasTB
+17:39:20    23 -->                                                                                         [tcl] trigger_hier_stack_context_switch 0
+17:39:20    24 -->                                                                                             [tcl] synUtils::setDVEInitPhase 1
+17:39:20    25 --> ...  [tcl] gui_get_env SIMSETUP::SIMVPD
+17:39:20    26 --> ...      [tcl] synopsys::dump -type VPD -file /home/lindongyi/Gitee_Project/First_RV/VCS_Testench/ALUCTRL/inter.vpd -locking
+17:39:20    27 --> ...          [tcl] synopsys::dump -autoflush on -fid VPD0
+17:39:20    28 --> ...              [tcl] set ::dve_fid VPD0
+17:39:20    29 --> ...                  [tcl] synUtils::setDVEInitPhase 0
+17:39:20    30 --> ...                      [tcl] ucliCore::getToolPID
+17:39:20    31 --> ...                          [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpJmGJXP
+17:39:20    32 --> ...                              [tcl] synUtils::sendTool -active {_icl_start_rpc -version "L-2016.06_Full64" -sync_file /tmp/vcs_dve_rpc.lindongyi.10265}
+17:39:20    33 --> ...                                  [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.lindongyi.10265}
+17:39:20    34 --> ...                                      [tcl] dveMisc::vbusExpand ALUCTRL_tb
+17:39:20    35 --> ...                                          [tcl] config endofsim noexit
+17:39:20    36 --> ...                                              [tcl] config onfail enable all
+17:39:20    37 --> ...                                                  [tcl] config syscaddplainmembers
+17:39:21    38 --> ...                                                      [tcl] config syscaddsourcenames
+17:39:21    39 --> ...                                                          [tcl] config syscaddstructtypes
+17:39:21    40 --> ...                                                              [tcl] synopsys::listing -disable
+17:39:25    41 --> ...                                                                  [tcl] synopsys::dump -add {ALUCTRL_tb.ALUCtrl ALUCTRL_tb.ALUOp ALUCTRL_tb.ALUOut ALUCTRL_tb.INST_ADD ALUCTRL_tb.INST_BEQ ALUCTRL_tb.Zero ALUCTRL_tb.funct3 ALUCTRL_tb.funct7 ALUCTRL_tb.in0 ALUCTRL_tb.in1 } -aggregates  -fid VPD0
+17:39:27    42 --> ...                                                                      [tcl] synopsys::run
+17:39:27    43 --> ...                                                                          [tcl] set ucliGUI::state
+17:39:27    44 --> ...                                                                              [tcl] set ucliGUI::state
+17:39:27    45 --> ...                                                                                  [tcl] set ucliGUI::state
+17:39:27    46 --> ...                                                                                      [tcl] set ucliGUI::state
+17:39:27    47 --> ...                                                                                          [tcl] catch {senv activeDomain} dveMisc::result 
+17:39:27    48 --> ...                                                                                              [tcl] set dveMisc::result
+17:39:27    49 --> ...                                                                                                  [tcl] gui_update_simulator_buttons

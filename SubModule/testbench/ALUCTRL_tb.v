@@ -1,6 +1,4 @@
 `timescale 1ns/1ns
-`define INST_ADD 32'b00000000_00101_01111_000_10000_0110011 //funct7_rs2_rs1_funct3_rd_opcode
-`define INST_BEQ 32'b00000011_01011_01010_000_00100_1100011 //imm[12|10:5]_rs2_rs1_funct3_imm[4:1|11]_opcode
 
 module ALUCTRL_tb();
 
@@ -29,6 +27,8 @@ ALU32 ALU32_u0(
     .Zero(Zero),
     .ALUOut(ALUOut)
 );
+integer INST_ADD = 32'b0000000_00101_01111_000_10000_0110011; //funct7_rs2_rs1_funct3_rd_opcode
+integer INST_BEQ = 32'b0000011_01011_01010_000_00100_1100011; //imm[12|10:5]_rs2_rs1_funct3_imm[4:1|11]_opcode
 
 initial begin
     //reset

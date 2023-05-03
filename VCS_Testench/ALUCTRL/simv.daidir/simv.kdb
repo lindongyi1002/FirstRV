@@ -1,0 +1,15 @@
+rc file Version 1.0
+
+[Design]
+COMPILE_PATH=/home/lindongyi/Gitee_Project/First_RV/VCS_Testench/ALUCTRL
+SystemC=FALSE
+UUM=FALSE
+KDB=FALSE
+USE_NOVAS_HOME=FALSE
+COSIM=FALSE
+TOP=ALUCTRL_tb 
+OPTION=-ssz -ssv -ssy -ssz -ssv -ssy 
+
+[Value]
+WREALX=ffff534e50535f58
+WREALZ=ffff534e50535f5a

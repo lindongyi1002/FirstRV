@@ -72,64 +72,33 @@ end
 endmodule
 ```
 
-- 使用VCS进行仿真, tb代码如下:
+### 2. ALU_CTRL
+
+输入funct7, funct3, ALUOp, 并根据此产生4bit ALUCtrl信号给ALU模块.
 
 ```verilog
 `timescale 1ns/1ps
+module ALUCtrl(funct7, funct3, ALUOp, ALUCtrl);
 
-module ALU32_tb();
-    reg        [31:0]   in0;
-    reg        [31:0]   in1;
-    reg        [3:0]    ALUCtrl;
+input       [6:0]   funct7;
+input       [2:0]   funct3;
+input       [1:0]   ALUOp;
+output  reg [3:0]   ALUCtrl;
 
-    wire                Zero;
-    wire       [31:0]   ALUOut;
-
-ALU32 ALU32_u0(
-    .in0(in0),
-    .in1(in1),
-    .ALUCtrl(ALUCtrl),
-    .Zero(Zero),
-    .ALUOut(ALUOut)
-);
-
-initial begin
-    in0 = 32'b0;
-    in1 = 32'b0;
-    ALUCtrl = 4'b0000;
-
-    //and
-    #1000;
-    in0 = 32'd10;
-    in1 = 32'd20;
-    ALUCtrl = 4'b0000;
-
-    //or
-    #1000;
-    ALUCtrl = 4'b0001;
-
-    //add
-    #1000;
-    ALUCtrl = 4'b0010;
-
-    //sub
-    #1000;
-    ALUCtrl = 4'b0110;
-
-    //slt
-    #1000;
-    ALUCtrl = 4'b0111;
-
-    //nor
-    #1000;
-    ALUCtrl = 4'b1100;
-
-    #3000;
-    $stop;
+//According to Fig4-12, the following code is designed
+always@(*)begin
+    case(ALUOp)
+        2'b00:  ALUCtrl <= 4'b0010;
+        2'b01:  ALUCtrl <= 4'b0110;
+        2'b10:  ALUCtrl <=  (funct7 == 7'b0000000 && funct3 == 3'b000)? 4'b0010 :
+                            (funct7 == 7'b0100000 && funct3 == 3'b000)? 4'b0110 :
+                            (funct7 == 7'b0000000 && funct3 == 3'b111)? 4'b0000 :
+                            (funct7 == 7'b0000000 && funct3 == 3'b110)? 4'b0001 :
+                            4'b1111;
+        default: ALUCtrl <= 4'b1111;
+    endcase
 end
+
 endmodule
 ```
 
-- VCS仿真结果如下图, 功能正确.
-
-![](https://cdn.jsdelivr.net/gh/lindongyi1002/FigBed/ObFigBed/20230503131601.png)

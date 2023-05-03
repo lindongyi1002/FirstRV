@@ -39,5 +39,97 @@
 
 ### 1. ALU模块
 
+- 设计的ALU可以实现and, or, add, sub, slt, nor功能, 有4位ALUCtrl控制, 参考计组RV附录A.5实现, 具体代码如下.
 
+```verilog
+//CamelCase nominate
+`timescale 1ns/1ps
+module ALU32(in0, in1, ALUCtrl, Zero, ALUOut);
 
+input       [31:0]  in0;
+input       [31:0]  in1;
+input       [3:0]   ALUCtrl;
+
+output              Zero;
+output  reg [31:0]  ALUOut;
+
+//Zero
+assign Zero = (ALUOut == 0);
+
+//logic & arithmetic iperation
+always@(in0 or in1 or ALUCtrl)begin
+    case(ALUCtrl)
+        4'b0000:    ALUOut <= in0 & in1;                //and
+        4'b0001:    ALUOut <= in0 | in1;                //or, logic "||" or bit "|"
+        4'b0010:    ALUOut <= in0 + in1;                //add
+        4'b0110:    ALUOut <= in0 - in1;                //sub
+        4'b0111:    ALUOut <= (in0 < in1)? 1'b1 : 0;    //slt
+        4'b1100:    ALUOut <= ~(in0 | in1);             //nor
+        default:    ALUOut <= 0;
+    endcase
+end
+
+endmodule
+```
+
+- 使用VCS进行仿真, tb代码如下:
+
+```verilog
+`timescale 1ns/1ps
+
+module ALU32_tb();
+    reg        [31:0]   in0;
+    reg        [31:0]   in1;
+    reg        [3:0]    ALUCtrl;
+
+    wire                Zero;
+    wire       [31:0]   ALUOut;
+
+ALU32 ALU32_u0(
+    .in0(in0),
+    .in1(in1),
+    .ALUCtrl(ALUCtrl),
+    .Zero(Zero),
+    .ALUOut(ALUOut)
+);
+
+initial begin
+    in0 = 32'b0;
+    in1 = 32'b0;
+    ALUCtrl = 4'b0000;
+
+    //and
+    #1000;
+    in0 = 32'd10;
+    in1 = 32'd20;
+    ALUCtrl = 4'b0000;
+
+    //or
+    #1000;
+    ALUCtrl = 4'b0001;
+
+    //add
+    #1000;
+    ALUCtrl = 4'b0010;
+
+    //sub
+    #1000;
+    ALUCtrl = 4'b0110;
+
+    //slt
+    #1000;
+    ALUCtrl = 4'b0111;
+
+    //nor
+    #1000;
+    ALUCtrl = 4'b1100;
+
+    #3000;
+    $stop;
+end
+endmodule
+```
+
+- VCS仿真结果如下图, 功能正确.
+
+![](https://cdn.jsdelivr.net/gh/lindongyi1002/FigBed/ObFigBed/20230503131601.png)

@@ -1,0 +1,39 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "ALU32_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_6417_archive_1.a",
+            "objects": [
+                [
+                    "MDsiC_d.o",
+                    14677
+                ]
+            ],
+            "size": 14677
+        }
+    ],
+    "CompUnits": {
+        "amcQw_d": {
+            "bytes": 7378,
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "checksum": 0,
+            "mode": 4
+        },
+        "MDsiC_d": {
+            "bytes": 14677,
+            "mod": "ALU32_tb",
+            "out": "MDsiC_d.o",
+            "checksum": 0,
+            "mode": 4,
+            "archive": "archive.0/_6417_archive_1.a"
+        }
+    },
+    "reusePaths": {}
+}

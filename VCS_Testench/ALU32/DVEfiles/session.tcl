@@ -1,8 +1,8 @@
 # Begin_DVE_Session_Save_Info
 # DVE full session
-# Saved on Tue May 2 21:49:53 2023
+# Saved on Wed May 3 17:24:44 2023
 # Designs open: 1
-#   Sim: /home/lindongyi/Github_Project/First_RV/VCS_Testbech/ALU32/simv
+#   Sim: /home/lindongyi/Gitee_Project/First_RV/VCS_Testench/ALU32/simv
 # Toplevel windows open: 1
 # 	TopLevel.1
 #   Source.1: ALU32_tb
@@ -14,7 +14,7 @@
 # DVE build date: May 24 2016 21:01:02
 
 
-#<Session mode="Full" path="/home/lindongyi/Github_Project/First_RV/VCS_Testbech/ALU32/DVEfiles/session.tcl" type="Debug">
+#<Session mode="Full" path="/home/lindongyi/Gitee_Project/First_RV/VCS_Testench/ALU32/DVEfiles/session.tcl" type="Debug">
 
 gui_set_loading_session_type Post
 gui_continuetime_set
@@ -66,7 +66,7 @@ if {![gui_exist_window -window TopLevel.1]} {
 } else { 
     set TopLevel.1 TopLevel.1
 }
-gui_show_window -window ${TopLevel.1} -show_state normal -rect {{102 85} {3836 2157}}
+gui_show_window -window ${TopLevel.1} -show_state normal -rect {{102 85} {3834 2155}}
 
 # ToolBar settings
 gui_set_toolbar_attributes -toolbar {TimeOperations} -dock_state top
@@ -113,23 +113,23 @@ gui_show_toolbar -toolbar {Testbench}
 # End ToolBar settings
 
 # Docked window settings
-set HSPane.1 [gui_create_window -type HSPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 375]
+set HSPane.1 [gui_create_window -type HSPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 373]
 catch { set Hier.1 [gui_share_window -id ${HSPane.1} -type Hier] }
-gui_set_window_pref_key -window ${HSPane.1} -key dock_width -value_type integer -value 375
+gui_set_window_pref_key -window ${HSPane.1} -key dock_width -value_type integer -value 373
 gui_set_window_pref_key -window ${HSPane.1} -key dock_height -value_type integer -value -1
 gui_set_window_pref_key -window ${HSPane.1} -key dock_offset -value_type integer -value 0
-gui_update_layout -id ${HSPane.1} {{left 0} {top 0} {width 374} {height 1772} {dock_state left} {dock_on_new_line true} {child_hier_colhier 267} {child_hier_coltype 100} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
-set DLPane.1 [gui_create_window -type DLPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 396]
+gui_update_layout -id ${HSPane.1} {{left 0} {top 0} {width 372} {height 1772} {dock_state left} {dock_on_new_line true} {child_hier_colhier 267} {child_hier_coltype 100} {child_hier_colpd 0} {child_hier_col1 0} {child_hier_col2 1} {child_hier_col3 -1}}
+set DLPane.1 [gui_create_window -type DLPane -parent ${TopLevel.1} -dock_state left -dock_on_new_line true -dock_extent 394]
 catch { set Data.1 [gui_share_window -id ${DLPane.1} -type Data] }
-gui_set_window_pref_key -window ${DLPane.1} -key dock_width -value_type integer -value 396
+gui_set_window_pref_key -window ${DLPane.1} -key dock_width -value_type integer -value 394
 gui_set_window_pref_key -window ${DLPane.1} -key dock_height -value_type integer -value 1772
 gui_set_window_pref_key -window ${DLPane.1} -key dock_offset -value_type integer -value 0
-gui_update_layout -id ${DLPane.1} {{left 0} {top 0} {width 395} {height 1772} {dock_state left} {dock_on_new_line true} {child_data_colvariable 204} {child_data_colvalue 107} {child_data_coltype 78} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
-set Console.1 [gui_create_window -type Console -parent ${TopLevel.1} -dock_state bottom -dock_on_new_line true -dock_extent 177]
-gui_set_window_pref_key -window ${Console.1} -key dock_width -value_type integer -value 3735
-gui_set_window_pref_key -window ${Console.1} -key dock_height -value_type integer -value 177
+gui_update_layout -id ${DLPane.1} {{left 0} {top 0} {width 393} {height 1772} {dock_state left} {dock_on_new_line true} {child_data_colvariable 204} {child_data_colvalue 107} {child_data_coltype 78} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
+set Console.1 [gui_create_window -type Console -parent ${TopLevel.1} -dock_state bottom -dock_on_new_line true -dock_extent 175]
+gui_set_window_pref_key -window ${Console.1} -key dock_width -value_type integer -value 3733
+gui_set_window_pref_key -window ${Console.1} -key dock_height -value_type integer -value 175
 gui_set_window_pref_key -window ${Console.1} -key dock_offset -value_type integer -value 0
-gui_update_layout -id ${Console.1} {{left 0} {top 0} {width 3734} {height 176} {dock_state bottom} {dock_on_new_line true}}
+gui_update_layout -id ${Console.1} {{left 0} {top 0} {width 3732} {height 174} {dock_state bottom} {dock_on_new_line true}}
 #### Start - Readjusting docked view's offset / size
 set dockAreaList { top left right bottom }
 foreach dockArea $dockAreaList {
@@ -176,8 +176,8 @@ if { [llength [lindex [gui_get_db -design Sim] 0]] == 0 } {
 gui_set_env SIMSETUP::SIMARGS {{-a run.log}}
 gui_set_env SIMSETUP::SIMEXE {./simv}
 gui_set_env SIMSETUP::ALLOW_POLL {0}
-if { ![gui_is_db_opened -db {/home/lindongyi/Github_Project/First_RV/VCS_Testbech/ALU32/simv}] } {
-gui_sim_run Ucli -exe simv -args { -a run.log -ucligui} -dir /home/lindongyi/Github_Project/First_RV/VCS_Testbech/ALU32 -nosource
+if { ![gui_is_db_opened -db {/home/lindongyi/Gitee_Project/First_RV/VCS_Testench/ALU32/simv}] } {
+gui_sim_run Ucli -exe simv -args { -a run.log -ucligui} -dir /home/lindongyi/Gitee_Project/First_RV/VCS_Testench/ALU32 -nosource
 }
 }
 if { ![gui_sim_state -check active] } {error "Simulator did not start correctly" error}
@@ -216,7 +216,7 @@ gui_change_stack_mode -mode list
 # Post database loading setting...
 
 # Restore C1 time
-gui_set_time -C1_only 4482851
+gui_set_time -C1_only 2552802
 
 
 
@@ -259,7 +259,7 @@ gui_view_scroll -id ${Hier.1} -horizontal -set 0
 # Source 'Source.1'
 gui_src_value_annotate -id ${Source.1} -switch false
 gui_set_env TOGGLE::VALUEANNOTATE 0
-gui_open_source -id ${Source.1}  -replace -active ALU32_tb /home/lindongyi/Github_Project/First_RV/SubModule/testbench/ALU32_tb.v
+gui_open_source -id ${Source.1}  -replace -active ALU32_tb /home/lindongyi/Gitee_Project/First_RV/SubModule/testbench/ALU32_tb.v
 gui_view_scroll -id ${Source.1} -vertical -set 0
 gui_src_set_reusable -id ${Source.1}
 # Restore toplevel window zorder

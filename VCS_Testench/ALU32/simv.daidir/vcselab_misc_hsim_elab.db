@@ -1,6 +1,6 @@
 psSimBaseName                      	simv
 psLogFileName                      	NULL
-pDaiDir                            	/home/lindongyi/Github_Project/First_RV/VCS_Testbech/ALU32/simv.daidir
+pDaiDir                            	/home/lindongyi/Gitee_Project/First_RV/VCS_Testench/ALU32/simv.daidir
 destPath                           	csrc/
 fSharedMaster                      	0
 hsMainFileCount                    	0

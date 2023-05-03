@@ -1,7 +1,7 @@
 rc file Version 1.0
 
 [Design]
-COMPILE_PATH=/home/lindongyi/Github_Project/First_RV/VCS_Testbech/ALU32
+COMPILE_PATH=/home/lindongyi/Gitee_Project/First_RV/VCS_Testench/ALU32
 SystemC=FALSE
 UUM=FALSE
 KDB=FALSE

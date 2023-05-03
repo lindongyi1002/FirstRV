@@ -4,14 +4,14 @@ ucliCore::getToolPID
 synopsys::env hasTB
 trigger_hier_stack_context_switch 0
 synUtils::setDVEInitPhase 1
-synopsys::dump -type VPD -file /home/lindongyi/Github_Project/First_RV/VCS_Testbech/ALU32/inter.vpd -locking
+synopsys::dump -type VPD -file /home/lindongyi/Gitee_Project/First_RV/VCS_Testench/ALU32/inter.vpd -locking
 synopsys::dump -autoflush on -fid VPD0
 set ::dve_fid VPD0
 synUtils::setDVEInitPhase 0
 ucliCore::getToolPID
-synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp8aSpKa
-synUtils::sendTool -active {_icl_start_rpc -version "L-2016.06_Full64" -sync_file /tmp/vcs_dve_rpc.lindongyi.12200}
-synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.lindongyi.12200}
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp7sqMeY
+synUtils::sendTool -active {_icl_start_rpc -version "L-2016.06_Full64" -sync_file /tmp/vcs_dve_rpc.lindongyi.6583}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.lindongyi.6583}
 config endofsim noexit
 config onfail enable all
 config syscaddplainmembers

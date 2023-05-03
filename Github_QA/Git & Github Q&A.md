@@ -11,3 +11,6 @@
 
 ## Q2 在git bash中由本地向github push文件时提示fatal: unable to access 'https://github.com/lindongyi1002/Array_img_show.git/': Failed to connect to github.com port 443 after 21123 ms: Timed out
 同样是网络原因, 如果梯子速度不够快, 可以将要上传的文件分两次或多次push, 减轻上传压力.
+
+## Q3 在ubuntu虚拟机中执行git push提示fatal: unable to access 'https://github.com/lindongyi1002/First_RV.git/': Failed to connect to github.com port 443: Connection refused
+网络原因, 多尝试几次.

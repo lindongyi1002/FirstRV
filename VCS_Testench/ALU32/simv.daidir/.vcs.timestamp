@@ -1,0 +1,128 @@
+0 
+29
++itf+/home/lindongyi/Synopsys_EDA_Tools/vcs2016/linux64/lib/vcsdp.tab
++memcbk
++vcsd
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc-4.8
+-Mcfl= -pipe -fPIC -O -I/home/lindongyi/Synopsys_EDA_Tools/vcs2016/include
+-Mcplusplus=g++-4.8
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -Wl,--no-as-needed -rdynamic
+-Mobjects= /home/lindongyi/Synopsys_EDA_Tools/vcs2016/linux64/lib/libvirsim.so /home/lindongyi/Synopsys_EDA_Tools/vcs2016/linux64/lib/liberrorinf.so /home/lindongyi/Synopsys_EDA_Tools/vcs2016/linux64/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/home/lindongyi/Synopsys_EDA_Tools/vcs2016/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/home/lindongyi/Synopsys_EDA_Tools/vcs2016/include
+-Xpiyushb1=0x80
+-debug_access+all+dmptf+bc
+-debug_region=cell+lib
+-full64
+-gen_obj
+-picarchive
+/home/lindongyi/Github_Project/First_RV/SubModule/RTL/ALU32.v
+/home/lindongyi/Github_Project/First_RV/SubModule/testbench/ALU32_tb.v
+/home/lindongyi/Synopsys_EDA_Tools/vcs2016/linux64/bin/vcs1
+85
+sysc_uni_pwd=/home/lindongyi/Github_Project/First_RV/VCS_Testbech/ALU32
+XMODIFIERS=@im=ibus
+XDG_VTNR=7
+XDG_SESSION_TYPE=x11
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+XDG_SESSION_ID=c1
+XDG_SESSION_DESKTOP=ubuntu
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+XDG_SEAT=seat0
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_MENU_PREFIX=gnome-
+XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/lindongyi
+XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+XDG_CURRENT_DESKTOP=Unity
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg
+XAUTHORITY=/home/lindongyi/.Xauthority
+VTE_VERSION=4205
+VSCODE_GIT_IPC_HANDLE=/run/user/1000/vscode-git-354e7b370b.sock
+VSCODE_GIT_ASKPASS_NODE=/usr/share/code/code
+VSCODE_GIT_ASKPASS_MAIN=/usr/share/code/resources/app/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=--ms-enable-electron-run-as-node
+VMR_MODE_FLAG=64
+VERDI_HOME=/home/lindongyi/Synopsys_EDA_Tools/verdi2016
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/home/lindongyi/Synopsys_EDA_Tools/vcs2016
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=linux
+VCS_ARCH=linux64
+UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/1412
+UNAME=/bin/uname
+TOOL_HOME=/home/lindongyi/Synopsys_EDA_Tools/vcs2016/linux64
+TERM_PROGRAM_VERSION=1.77.3
+TERM_PROGRAM=vscode
+SYNOPSYS=/home/lindongyi/Synopsys_EDA_Tools/dc2016
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+SPYGLASS_HOME=/home/lindongyi/Synopsys_EDA_Tools/spyglass2016/SpyGlass-L2016.06/SPYGLASS_HOME
+SPYGLASS_DC_PATH=/home/lindongyi/Synopsys_EDA_Tools/dc2016
+SESSION_MANAGER=local/Ubuntu-Workstation:@/tmp/.ICE-unix/2092,unix/Ubuntu-Workstation:/tmp/.ICE-unix/2092
+SESSIONTYPE=gnome-session
+SESSION=ubuntu
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_QPA_PLATFORMTHEME=appmenu-qt5
+QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1
+QT_IM_MODULE=ibus
+QT_ACCESSIBILITY=1
+QT4_IM_MODULE=xim
+PT_HOME=/home/lindongyi/Synopsys_EDA_Tools/pt2016
+PERL_MM_OPT=INSTALL_BASE=/home/lindongyi/perl5
+PERL_MB_OPT=--install_base "/home/lindongyi/perl5"
+PERL_LOCAL_LIB_ROOT=/home/lindongyi/perl5:/home/lindongyi/perl5
+PERL5LIB=/home/lindongyi/perl5/lib/perl5:/home/lindongyi/perl5/lib/perl5
+OVA_UUM=0
+ORIGINAL_XDG_CURRENT_DESKTOP=Unity
+NOVAS_HOME=/home/lindongyi/Synopsys_EDA_Tools/verdi2016
+MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path
+LESSOPEN=| /usr/bin/lesspipe %s
+LESSCLOSE=/usr/bin/lesspipe %s %s
+LC_HOME=/home/lindongyi/Synopsys_EDA_Tools/lc2016
+LC_ALL=C
+JOB=dbus
+INSTANCE=
+IM_CONFIG_PHASE=1
+GTK_MODULES=gail:atk-bridge:unity-gtk-module
+GTK_IM_MODULE=ibus
+GTK2_MODULES=overlay-scrollbar
+GPG_AGENT_INFO=/home/lindongyi/.gnupg/S.gpg-agent:0:1
+GNOME_KEYRING_PID=
+GNOME_KEYRING_CONTROL=
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GIT_ASKPASS=/usr/share/code/resources/app/extensions/git/dist/askpass.sh
+GDM_LANG=en_US
+GDMSESSION=ubuntu
+GDK_BACKEND=x11
+FM_HOME=/home/lindongyi/Synopsys_EDA_Tools/fm2015
+DESKTOP_SESSION=ubuntu
+DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path
+DC_HOME=/home/lindongyi/Synopsys_EDA_Tools/dc2016
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-RGQ7zZAabm
+COMPIZ_CONFIG_PROFILE=ubuntu
+COLORTERM=truecolor
+CLUTTER_IM_MODULE=xim
+CHROME_DESKTOP=code-url-handler.desktop
+0
+3
+1683033706 /home/lindongyi/Github_Project/First_RV/SubModule/testbench/ALU32_tb.v
+1683034913 /home/lindongyi/Github_Project/First_RV/SubModule/RTL/ALU32.v
+1464145466 /home/lindongyi/Synopsys_EDA_Tools/vcs2016/linux64/lib/vcsdp.tab
+4
+0 
+1464147802 /home/lindongyi/Synopsys_EDA_Tools/vcs2016/linux64/lib/libvirsim.so
+1464147272 /home/lindongyi/Synopsys_EDA_Tools/vcs2016/linux64/lib/liberrorinf.so
+1464147248 /home/lindongyi/Synopsys_EDA_Tools/vcs2016/linux64/lib/libsnpsmalloc.so
+1683035330 simv.daidir

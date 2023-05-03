@@ -1,12 +1,12 @@
 `timescale 1ns/1ps
 
 module ALU32_tb();
-    wire        [31:0]  in0;
-    wire        [31:0]  in1;
-    wire        [3:0]   ALUCtrl;
+    reg        [31:0]   in0;
+    reg        [31:0]   in1;
+    reg        [3:0]    ALUCtrl;
 
-    reg                 Zero;
-    reg         [31:0]  ALUOut;
+    wire                Zero;
+    wire       [31:0]   ALUOut;
 
 ALU32 ALU32_u0(
     .in0(in0),
@@ -19,7 +19,7 @@ ALU32 ALU32_u0(
 initial begin
     in0 = 32'b0;
     in1 = 32'b0;
-    ALUCtrl = 4'b0;
+    ALUCtrl = 4'b0000;
 
     //and
     #1000;

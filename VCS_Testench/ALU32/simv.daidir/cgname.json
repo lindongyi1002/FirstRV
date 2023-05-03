@@ -1,0 +1,12 @@
+{
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ],
+    "ALU32_tb": [
+        "ALU32_tb",
+        "MDsiC",
+        "module"
+    ]
+}

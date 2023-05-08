@@ -10,7 +10,7 @@
 ==============================================================================================*/
 
 
-module ImmGen();
+module ImmGen(Inst, Imm);
 
 input       [31:0]  Inst;
 output  reg [31:0]  Imm;    //sign-extended

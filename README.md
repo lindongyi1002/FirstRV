@@ -30,7 +30,7 @@
 	- 算术逻辑指令add, sub, and, or;
 	- 条件分支指令beq;
 
-## 单周期处理器设计
+## 单周期处理器设计(FirstRV/SingleCyProcessor)
 
 ### 0. 数据通路
 

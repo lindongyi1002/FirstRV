@@ -10,7 +10,7 @@
     Copyright           :   2023, Lindongyi, All right reserved
 ==============================================================================================*/
 
-module PC();
+module PC(Clk, Rst_n, Branch, Zero, Imm, PC_i, PC_o);
 
 input               Clk;
 input               Rst_n;
@@ -18,12 +18,12 @@ input               Rst_n;
 input               Branch;
 input               Zero;
 
-input       [11:0]  Imm;
+input       [31:0]  Imm;
 
 input       [31:0]  PC_i;
 output  reg [31:0]  PC_o;
 
-wire        [11:0]  offset;
+wire        [31:0]  offset;
 
 assign offset = Imm << 1'b1;
 

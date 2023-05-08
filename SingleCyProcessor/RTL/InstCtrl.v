@@ -25,7 +25,7 @@ output  reg             MemWrite;
 output  reg             ALUSrc;
 output  reg             RegWrite;
 
-always@(posedge Clk )begin
+always@(posedge Clk)begin
     case(Opcode)
         7'b0110011: begin       //R-type instruction
                         ALUSrc      <= 0;
@@ -54,13 +54,13 @@ always@(posedge Clk )begin
                         Branch      <= 0;
                         ALUOp       <= 2'b00;
                     end
-        7'b1100011: begin       //sw instruction
+        7'b1100011: begin       //beq instruction
                         ALUSrc      <= 0;
                         MemtoReg    <= 1'b?;
                         RegWrite    <= 0;
                         MemRead     <= 0;
-                        MemWrite    <= 1'b1;
-                        Branch      <= 0;
+                        MemWrite    <= 0;
+                        Branch      <= 1'b1;
                         ALUOp       <= 2'b01;
                     end
         default:    begin

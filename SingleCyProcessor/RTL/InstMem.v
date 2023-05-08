@@ -13,6 +13,7 @@
 module InstMem();
 
 input               Clk;
+input               Rst_n;
 
 input       [31:0]  AddrInst;
 

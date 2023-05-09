@@ -1,4 +1,5 @@
-#RULE 1: alias which in .bashrc is not support
+#tip 1: alias which in .bashrc is not support;
+#tip 2:	can not add comments to shell cmd which in Makefile;
 SHELL=/bin/bash
 
 #**********************************************************************#
@@ -9,10 +10,9 @@ all: compile simv
 WORKPATH = ~/Gitee_Project/FirstRV/SingleCyProcessor
 
 compile:
-	vcs -full64 -cpp g++-4.8 -cc gcc-4.8 -LDFLAGS -Wl,--no-as-needed \ #only vcs cmd cannot be executed because RULE 1 above;
-		#Top
+	#only vcs cmd cannot be executed because tip 1 above;
+	vcs -full64 -cpp g++-4.8 -cc gcc-4.8 -LDFLAGS -Wl,--no-as-needed \
 		$(WORKPATH)/RTL/SingleCyProcessor_Top.v \
-		#submodule
 		$(WORKPATH)/RTL/ALU32.v \
 		$(WORKPATH)/RTL/DataMem.v \
 		$(WORKPATH)/RTL/ImmGen.v \
@@ -22,8 +22,8 @@ compile:
 		$(WORKPATH)/RTL/defines.v \
 		$(WORKPATH)/RTL/InstMem.v \
 		$(WORKPATH)/RTL/Registers.v \
-		#tb
-		$(WORKPATH)/testbench/.v \
+		$(WORKPATH)/testbench/Single_Top_tb.v \
+		$(WORKPATH)/RTL/defines.v \
 		-debug_all
 
 simv:

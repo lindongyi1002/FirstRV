@@ -9,7 +9,7 @@
     Copyright           :   2023, Lindongyi, All right reserved
 ==============================================================================================*/
 
-`include "defines.v"
+`include "./defines.v"
 
 module Regesters(Clk, AddrRs1, AddrRs2, AddrRd, WrData, RdData1, RdData2);
 

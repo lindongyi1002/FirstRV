@@ -39,7 +39,10 @@ wire    [31:0]      WrData;
 wire    [31:0]      RdData1;
 wire    [31:0]      RdData2;
 //to Registers WrData MUX
-assign WrData = (MemtoReg == 1)? Data_out : ALUOut;
+assign WrData = (MemtoReg == 1)? DataMem_Data_out : ALUOut;
+
+//ImmGen
+wire    [31:0]      Imm;
             
 //ALU
 wire    [31:0]      ALU_in0;

@@ -38,66 +38,11 @@
 
 ### 1. ALU模块
 
-- 设计的ALU可以实现and, or, add, sub, slt, nor功能, 有4位ALUCtrl控制, 参考计组RV附录A.5实现, 具体代码如下.
-
-```verilog
-//CamelCase nominate
-`timescale 1ns/1ps
-module ALU32(in0, in1, ALUCtrl, Zero, ALUOut);
-
-input       [31:0]  in0;
-input       [31:0]  in1;
-input       [3:0]   ALUCtrl;
-
-output              Zero;
-output  reg [31:0]  ALUOut;
-
-//Zero
-assign Zero = (ALUOut == 0);
-
-//logic & arithmetic iperation
-always@(in0 or in1 or ALUCtrl)begin
-    case(ALUCtrl)
-        4'b0000:    ALUOut <= in0 & in1;                //and
-        4'b0001:    ALUOut <= in0 | in1;                //or, logic "||" or bit "|"
-        4'b0010:    ALUOut <= in0 + in1;                //add
-        4'b0110:    ALUOut <= in0 - in1;                //sub
-        4'b0111:    ALUOut <= (in0 < in1)? 1'b1 : 0;    //slt
-        4'b1100:    ALUOut <= ~(in0 | in1);             //nor
-        default:    ALUOut <= 0;
-    endcase
-end
-
-endmodule
-```
+- 设计的ALU可以实现and, or, add, sub, slt, nor功能, 有4位ALUCtrl控制, 参考计组RV附录A.5实现
 
 ### 2. ALU_CTRL
 
 输入funct7, funct3, ALUOp, 并根据此产生4bit ALUCtrl信号给ALU模块.
 
-```verilog
-`timescale 1ns/1ps
-module ALUCtrl(funct7, funct3, ALUOp, ALUCtrl);
-
-input       [6:0]   funct7;
-input       [2:0]   funct3;
-input       [1:0]   ALUOp;
-output  reg [3:0]   ALUCtrl;
-
-//According to Fig4-12, the following code is designed
-always@(*)begin
-    case(ALUOp)
-        2'b00:  ALUCtrl <= 4'b0010;
-        2'b01:  ALUCtrl <= 4'b0110;
-        2'b10:  ALUCtrl <=  (funct7 == 7'b0000000 && funct3 == 3'b000)? 4'b0010 :
-                            (funct7 == 7'b0100000 && funct3 == 3'b000)? 4'b0110 :
-                            (funct7 == 7'b0000000 && funct3 == 3'b111)? 4'b0000 :
-                            (funct7 == 7'b0000000 && funct3 == 3'b110)? 4'b0001 :
-                            4'b1111;
-        default: ALUCtrl <= 4'b1111;
-    endcase
-end
-
-endmodule
-```
+### 3.
 

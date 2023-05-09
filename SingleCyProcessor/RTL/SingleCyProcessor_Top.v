@@ -9,7 +9,8 @@
     Copyright           :   2023, Lindongyi, All right reserved
 ==============================================================================================*/
 
-module SingleCyProcessor_Top();
+`timescale 1ns/1ps
+module SingleCyProcessor_Top(Clk, Rst_n);
 
 input               Clk;
 input               Rst_n;

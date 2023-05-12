@@ -1,0 +1,1 @@
+1. makefile无法使用.bashrc中定义的alias别名，是因为shell分为交互模式和非交互模式，脚本执行时默认是非交互，普通命令行默认是交互，而alias在非交互模式下默认是无法使用的，所以只能自己在makefile中重新定义。参考：  https://blog.csdn.net/Yichuan_Sun/article/details/109635293

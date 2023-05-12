@@ -23,7 +23,7 @@
 ### 5. 因此RISC-V算术指令的三个操作数必须从32个寄存器中选择;
 
 ### 6. RISC-V约定在"x"后面跟一个寄存器编号来表示, 如x22, x12等;
-![800](https://cdn.jsdelivr.net/gh/lindongyi1002/FigBed/ObFigBed/Pasted%20image%2020230416203722.png)
+![800](https://picgo-1318211300.cos.ap-beijing.myqcloud.com/FigBed/Pasted%20image%2020230416203722.png)
 
 ### 7. RISC-V指令中的算数运算只作用于寄存器, 因此, RISC-V必须包含在内存和寄存器之间传输数据的指令, 这些指令称为数据传输指令;
 
@@ -56,12 +56,12 @@
 ### 3. 把指令的数字表示称作机器语言;
 
 ### 4. RISC-V指令格式:
- ![800](https://cdn.jsdelivr.net/gh/lindongyi1002/FigBed/ObFigBed/Pasted%20image%2020230416220951.png)0
+ ![800](https://picgo-1318211300.cos.ap-beijing.myqcloud.com/FigBed/Pasted%20image%2020230416220951.png)0
 |R-type|I-type|S-type|B-type|U-type|J-type|
 |---|---|---|---|---|---|
 |寄存器到寄存器|用于短immediate和访存load|Store|条件跳转Branch|长immediate|非条件跳转Jump|
 - 下图为RV32I指令集的指令, 其中rs2和rs1(source register)是源操作数寄存器, rd(destination register)是目标寄存器
-![800](https://cdn.jsdelivr.net/gh/lindongyi1002/FigBed/ObFigBed/Pasted%20image%2020230417111057.png)
+![800](https://picgo-1318211300.cos.ap-beijing.myqcloud.com/FigBed/Pasted%20image%2020230417111057.png)
     - shamt字段(shift amount)用于指定位移指令(如slli, srli和srai)的位移量;
     - pred
     - succ
@@ -175,7 +175,7 @@
     jalr x0,0(x1)       //返回原进程(起始点)
 ```
 >    过程调用之前, 之中, 之后栈的变化情况:
-    ![800](https://cdn.jsdelivr.net/gh/lindongyi1002/FigBed/ObFigBed/Pasted%20image%2020230418165053.jpg)
+    ![800](https://picgo-1318211300.cos.ap-beijing.myqcloud.com/FigBed/Pasted%20image%2020230418165053.jpg)
 #### (2) 嵌套过程(*非叶子过程, Non-Leaf Procedure*)
 >    有如下C过程用于计算阶乘:
 ```C
@@ -266,7 +266,7 @@ L1:
     3. 基址或偏移寻址: 操作数存于内存中, 其地址是寄存器和指令中的常量之和;
     4. PC相对寻址: 分支地址是PC和指令中的常量之和;
 #### (3) RISC-V中条件分支指令的字节范围是多少?
-- 条件分支指令属于B type指令形式, B type有12位立即数, 故2^12 = 4K, 
+- 条件分支指令属于B type指令形式, B type有13位立即数, 最高位是符号位, 所以寻址范围为2^12 = 4K, 
 - 由于RISC-V使用字节寻址, 所以4K代表4K字节;
 - 由于条件分支指令使用PC相对寻址方式, 所以其字节范围应该在PC +/- 4K, 即分支前后地址范围各大约为4K;
 #### (4) RISC-V中跳转-链接指令(jal)的字节地址范围是多少?
@@ -277,7 +277,7 @@ L1:
 
 ### 13.翻译并启动程序
 - C语言的转换层次结构(编译器-汇编器-连接器-加载器):
-    ![800](https://cdn.jsdelivr.net/gh/lindongyi1002/FigBed/ObFigBed/Pasted%20image%2020230422123335.png)
+    ![800](https://picgo-1318211300.cos.ap-beijing.myqcloud.com/FigBed/Pasted%20image%2020230422123335.png)
 - 伪指令: 一种汇编指令的常见变体, 可以把它看作汇编语言指令;
     - 如:
 ```basic

@@ -1,7 +1,7 @@
 ## 报错描述:
     Instantiation of '???' failed. The design unit was not found.
 在使用Quartus与ModelSim联合仿真时,由于使用了不可综合的module放在testbench中,导致出现标题中的错误,在ModelSim中提示上述错误并显示error loding design.
-![](https://cdn.jsdelivr.net/gh/lindongyi1002/FigBed/ObFigBed/b7c2fd07d8a9486db1ea52c84785db5f.png)
+![](https://picgo-1318211300.cos.ap-beijing.myqcloud.com/FigBed/b7c2fd07d8a9486db1ea52c84785db5f.png)
 ## 问题原因
 在使用Quartus时,由于硬件原因,没有办法直接调试硬件参数,故使用一个不能被综合的module来给Top module提供数据,该module被例化在testbench中与Top module相连接.
 该module无法被综合,也就无法像其他design一样正常调用.只能在tesetbench中使用.
@@ -18,8 +18,8 @@
 
 方法如下:
 1. 重新添加testbench文件,在添加时将该不可综合的module一起与testbench文件添加进来.
-    ![1200](https://cdn.jsdelivr.net/gh/lindongyi1002/FigBed/ObFigBed/bdae197b370f4243985618bcdedb73fd.png)
-    ![1000](https://cdn.jsdelivr.net/gh/lindongyi1002/FigBed/ObFigBed/124f65d5b8514f4d988fab68dee1bb87.png)
+    ![1200](https://picgo-1318211300.cos.ap-beijing.myqcloud.com/FigBed/bdae197b370f4243985618bcdedb73fd.png)
+    ![1000](https://picgo-1318211300.cos.ap-beijing.myqcloud.com/FigBed/124f65d5b8514f4d988fab68dee1bb87.png)
     然后add-ok-ok-apply-ok即可.
 2. 重新综合
 3. 重新调用modelsim进行仿真.

@@ -4,36 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "2c8cc96d7faed404",
+        "id": "e5afb6897919afbe",
         "type": "tabs",
-        "dimension": 82.83010365029293,
         "children": [
           {
-            "id": "61359b0f67313b69",
+            "id": "ecb7e8f0f876ca62",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RISC-V/RISC-V基础知识.md",
+                "file": "Linux/Linux基本使用.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "344945dc83d8e055",
-        "type": "tabs",
-        "dimension": 17.169896349707077,
-        "children": [
-          {
-            "id": "afb068108728b125",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "RISC-V/RISC-V基础知识.md"
               }
             }
           }
@@ -87,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.5
+    "width": 200
   },
   "right": {
     "id": "293b943d9c2c08a2",
@@ -103,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "RISC-V/RISC-V基础知识.md",
+                "file": "Linux/Linux基本使用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "RISC-V/RISC-V基础知识.md",
+                "file": "Linux/Linux基本使用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "RISC-V/RISC-V基础知识.md"
+                "file": "Linux/Linux基本使用.md"
               }
             }
           }
@@ -164,9 +146,35 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "61359b0f67313b69",
+  "active": "ecb7e8f0f876ca62",
   "lastOpenFiles": [
-    "RISC-V/计算机组成与设计-硬件_软件接口_RISC-V版相关资料/Lecture PPT/~$Chapter_04-RISC-V.ppt",
+    "Linux/'The Missing Semester of Your CS Education' homework.md",
+    "Linux/Linux中常用的tar打包与解压操作.md",
+    "Linux/Linux基本使用.md",
+    "Linux/Makefile/Makefile中文教程.pdf",
+    "RISC-V/RISC-V基础知识.md",
+    "RISC-V/'手把手教你设计CPU--RISC-V处理器'笔记.md",
+    "Linux/Makefile/Makefile问题汇总.md",
+    "Linux/Makefile",
+    "RISC-V/RISC-V体系结构编程与实践 - 免费配套资料/开发板/~$选购开发板.docx",
+    "RISC-V/RISC-V体系结构编程与实践 - 免费配套资料/QEMU实验平台-vmware镜像/~$ware image下载地址.docx",
+    "RISC-V/RISC-V体系结构编程与实践 - 免费配套资料/免费视频/~$SC-V免费配套视频.docx",
+    "RISC-V/RISC-V体系结构编程与实践 - 免费配套资料/课件/RISC-V体系结构编程与实践课件ppt原稿申请.docx",
+    "RISC-V/RISC-V体系结构编程与实践 - 免费配套资料/课件/12 - 内存管理.pdf",
+    "RISC-V/RISC-V体系结构编程与实践 - 免费配套资料/课件/11 - 中断处理.pdf",
+    "RISC-V/RISC-V体系结构编程与实践 - 免费配套资料/课件/10 - 异常处理.pdf",
+    "RISC-V/RISC-V体系结构编程与实践 - 免费配套资料/课件/09 - 内嵌汇编.pdf",
+    "RISC-V/RISC-V体系结构编程与实践 - 免费配套资料/免费视频/第4季RISC-V视频课程目录.png",
+    "RISC-V/RISC-V体系结构编程与实践 - 免费配套资料/免费视频/第4季RISC-V视频课程.png",
+    "RISC-V/RISC-V体系结构编程与实践 - 免费配套资料/第4季RISC-V视频课程海报.png",
+    "电子电路与计算机基础知识/计算机基本知识/小端格式和大端格式(Little-Endian&Big-Endian).md",
+    "电子电路与计算机基础知识/计算机基本知识/字节(Byte)与比特(位)(bit).md",
+    "Vim/gvim中文简明教程-tutor官方中文教程.md",
+    "Verilog/关于使用结构化描述方式编写RTL代码时逻辑门的延时语法的功能解释.md",
+    "Verilog/Verilog打拍后仿真结果并没有打拍.md",
+    "Verilog/Verilog基础知识.md",
+    "Quartus_Modelsim_QA/通过quartus启动modelsim-altera仿真时出现nativelink error-couldn‘t execute invalid argument的问题.md",
+    "Quartus_Modelsim_QA/ModelSim报错(1).md",
     "Github_QA/Git & Github Q&A.md",
     "Fig_Bed/Pasted image 20230422123335.png",
     "Fig_Bed/Pasted image 20230418165053.jpg",
@@ -175,32 +183,9 @@
     "Fig_Bed/Pasted image 20230416203722.png",
     "Fig_Bed/Pasted image 20230415191830.png",
     "Fig_Bed/Pasted image 20230411171830.png",
-    "Fig_Bed/nativelink error-couldn‘t execute invalid argument.png",
-    "Fig_Bed/modelsim_Tx_data_ready2.png",
-    "Fig_Bed/modelsim_Tx_data_ready.png",
-    "Fig_Bed",
-    "RISC-V/RISC-V基础知识.md",
-    "Verilog/Verilog打拍后仿真结果并没有打拍.md",
-    "Verilog/Verilog基础知识.md",
-    "Verilog/同步复位异步复位.pdf",
-    "Verilog/关于使用结构化描述方式编写RTL代码时逻辑门的延时语法的功能解释.md",
-    "RISC-V/RISC-V-Reader-Chinese-v2p1.pdf",
-    "RISC-V/'手把手教你设计CPU--RISC-V处理器'笔记.md",
-    "RISC-V/计算机组成与设计-硬件_软件接口_RISC-V版相关资料/RISC-V-Reference-Data.pdf",
-    "Quartus_Modelsim_QA/ModelSim报错(1).md",
-    "Quartus_Modelsim_QA/通过quartus启动modelsim-altera仿真时出现nativelink error-couldn‘t execute invalid argument的问题.md",
-    "Linux/Linux中常用的tar打包与解压操作.md",
     "DC/DC学习中时无法保存为ddc文件的问题.md",
-    "电子电路与计算机基础知识/计算机基本知识/字节(Byte)与比特(位)(bit).md",
-    "电子电路与计算机基础知识/计算机基本知识/小端格式和大端格式(Little-Endian&Big-Endian).md",
-    "Vim/gvim中文简明教程-tutor官方中文教程.md",
     "未命名.canvas",
     "Fig_Bed.md",
-    "RISC-V/计算机组成与设计-硬件_软件接口_RISC-V版相关资料/Lecture PPT/~$Chapter_03-RISC-V.ppt",
-    "RISC-V/计算机组成与设计-硬件_软件接口_RISC-V版相关资料/Lecture PPT/~$Chapter_02-RISC-V.ppt",
-    "RISC-V/计算机组成与设计-硬件_软件接口_RISC-V版相关资料/RISC-V-Reference-Data.pdf.crdownload",
-    "RISC-V/计算机组成与设计-硬件_软件接口_RISC-V版相关资料/Lecture PPT/Chapter_06-RISC-V.ppt",
-    "RISC-V/计算机组成与设计-硬件_软件接口_RISC-V版相关资料/Lecture PPT/Chapter_05-RISC-V.ppt",
     "Verilog/一元约简运算符.md",
     "Verilog/`define与parameter的区别.md",
     "Verilog/Markdown语法最全汇总.md",

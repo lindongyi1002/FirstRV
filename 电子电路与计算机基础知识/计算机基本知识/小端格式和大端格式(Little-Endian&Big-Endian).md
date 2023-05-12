@@ -8,7 +8,7 @@
 - Big-Endian：将高序字节存储在起始地址（高位编址）
 
 举例说明如下图:
-![](https://cdn.jsdelivr.net/gh/lindongyi1002/FigBed/ObFigBed/Pasted%20image%2020230415191830.png)
+![](https://picgo-1318211300.cos.ap-beijing.myqcloud.com/FigBed/Pasted%20image%2020230415191830.png)
 
 然后就牵涉出两大CPU派系：
 - Motorola 6800，PowerPC 970，SPARC（除V9外）等处理器采用Big-Endian方式存储数据；

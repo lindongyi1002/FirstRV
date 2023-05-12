@@ -10,4 +10,4 @@ D:\Vim\vim82\tutor\tutor.zh_cn.utf-8
 * 该文件为中文版,但是直接用vim打开可能出现编码不正确导致乱码的问题,解决乱码问题参考:<https://blog.csdn.net/guyue35/article/details/103426391>
 
 * 修改之后按照tutor的流程一步一步做下来,觉得没记住可以多做一遍,一定要动手,然后在未来的使用中逐渐熟悉所有的操作.
-![1000](https://cdn.jsdelivr.net/gh/lindongyi1002/FigBed/ObFigBed/Pasted%20image%2020230411171830.png)
+![1000](https://picgo-1318211300.cos.ap-beijing.myqcloud.com/FigBed/Pasted%20image%2020230411171830.png)

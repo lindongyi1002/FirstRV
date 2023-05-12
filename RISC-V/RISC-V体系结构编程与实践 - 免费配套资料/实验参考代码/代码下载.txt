@@ -1,0 +1,18 @@
+《RISC-V体系结构编程与实践》一书的实验参考代码由git来管理，
+读者可以通过如下地址来下载。
+
+Github站点：
+https://github.com/runninglinuxkernel/riscv_programming_practice
+
+国内镜像站点：
+https://gitee.com/benshushu/riscv_programming_practice
+
+
+声明：
+1. 我们提供的实验参考代码，仅供参考，如读者发现更好的解法或者发现有bug，请到github/gitee上提PR或者issue。
+2. 本书的所有实验在QEMU或者NEMU模拟器上完成。
+强烈建议大家使用我们提供的vmware image镜像（版本 >= v1.5.0）
+3. 本书建有RISC-V微信读者SIG讨论群：
+    请先加客服微信号：runninglinuxkernel，注明加RISC-V读者群，并出示RISC-V图书的购买截图（请大家别介意，我们为了过滤掉一些伪读者，例如HR,猎头，机器人等）
+
+
